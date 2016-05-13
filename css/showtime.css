@@ -1,0 +1,406 @@
+
+
+.show {
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	max-width: 1920px;
+	list-style: none;
+	text-align: center;
+}
+
+.show figure {
+	box-sizing: border-box;
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	overflow: hidden;
+	margin: -0.135em;
+	width: 33.333%;
+	height: 400px;
+	background: #3085a3;
+	text-align: center;
+	cursor: pointer;
+	border: 0.5px solid #FFF;
+}
+
+.show figure img {
+	box-sizing: border-box;
+	position: relative;
+	display: block;
+	min-height: 100%;
+	opacity: 0.8;
+}
+
+.show figure figcaption {
+	box-sizing: border-box;
+	padding: 2em;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.show figure figcaption::before,
+.show figure figcaption::after {
+	pointer-events: none;
+}
+
+.show figure figcaption,
+.show figure a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+}
+
+
+.show figure a {
+	box-sizing: border-box;
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+}
+
+.show figure h2 {
+	word-spacing: -0.15em;
+	box-sizing: border-box;
+	font-weight: 300;
+}
+
+.show figure h2 span {
+	box-sizing: border-box;
+	font-weight: 800;
+}
+
+.show figure h2,
+.show figure p {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+.show figure p {
+	box-sizing: border-box;
+	letter-spacing: 1px;
+	font-size: 68.5%;
+}
+
+
+
+/*---------------*/
+/***** Lily *****/
+/*---------------*/
+
+figure.zmj_lily img {
+	border:none;
+	width: -webkit-calc(100% + 50px);
+	width: calc(100% + 50px);
+	opacity: 0.7;
+	transition: opacity 0.35s, transform 0.35s;
+	transform: translate3d(-40px,0,0);
+}
+
+figure.zmj_lily figcaption {
+	top: auto;
+	bottom: 0;
+	height: 50%;
+	text-align: left;
+}
+
+figure.zmj_lily h2,
+figure.zmj_lily p {
+	transform: translate3d(0,40px,0);
+}
+
+figure.zmj_lily h2 {
+	transition: transform 0.35s;
+}
+
+figure.zmj_lily p {
+	color: rgba(255,255,255,0.6);
+	opacity: 0;
+	transition: opacity 0.2s, transform 0.35s;
+}
+
+figure.zmj_lily:hover img,
+figure.zmj_lily:hover p {
+	opacity: 1;
+}
+
+figure.zmj_lily:hover img,
+figure.zmj_lily:hover h2,
+figure.zmj_lily:hover p {
+	transform: translate3d(0,0,0);
+}
+
+figure.zmj_lily:hover p {
+	transition-delay: 0.05s;
+	transition-duration: 0.35s;
+}
+
+/*---------------*/
+/***** Sadie *****/
+/*---------------*/
+
+figure.zmj_sadie figcaption::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to bottom, rgba(72,76,97,0) 0%, rgba(72,76,97,0.8) 75%);
+	content: '';
+	opacity: 0;
+	transform: translate3d(0,50%,0);
+}
+
+figure.zmj_sadie h2 {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 100%;
+	color: #484c61;
+	transition: transform 0.35s, color 0.35s;
+	transform: translate3d(0,-50%,0);
+}
+
+figure.zmj_sadie figcaption::before,
+figure.zmj_sadie p {
+	transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.zmj_sadie p {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 2em;
+	width: 100%;
+	opacity: 0;
+	transform: translate3d(0,10px,0);
+}
+
+figure.zmj_sadie:hover h2 {
+	color: #fff;
+	transform: translate3d(0,-50%,0) translate3d(0,-40px,0);
+}
+
+figure.zmj_sadie:hover figcaption::before ,
+figure.zmj_sadie:hover p {
+	opacity: 1;
+	transform: translate3d(0,0,0);
+}
+
+/*---------------*/
+
+
+
+
+/*---------------*/
+/***** Oscar *****/
+/*---------------*/
+
+figure.zmj_oscar {
+	background: linear-gradient(45deg, #22682a 0%,#9b4a1b 40%,#3a342a 100%);
+}
+
+figure.zmj_oscar img {
+	opacity: 0.9;
+	transition: opacity 0.35s;
+}
+
+figure.zmj_oscar figcaption {
+	padding: 3em;
+	background-color: rgba(58,52,42,0.7);
+	transition: background-color 0.35s;
+}
+
+figure.zmj_oscar figcaption::before {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	bottom: 30px;
+	left: 30px;
+	border: 1px solid #fff;
+	content: '';
+}
+
+figure.zmj_oscar h2 {
+	margin: 20% 0 10px 0;
+	transition: transform 0.35s;
+	transform: translate3d(0,100%,0);
+}
+
+figure.zmj_oscar figcaption::before,
+figure.zmj_oscar p {
+	opacity: 0;
+	transition: opacity 0.35s, transform 0.35s;
+	transform: scale(0);
+}
+
+figure.zmj_oscar:hover h2 {
+	transform: translate3d(0,0,0);
+}
+
+figure.zmj_oscar:hover figcaption::before,
+figure.zmj_oscar:hover p {
+	opacity: 1;
+	transform: scale(1);
+}
+
+figure.zmj_oscar:hover figcaption {
+	background-color: rgba(58,52,42,0);
+}
+
+figure.zmj_oscar:hover img {
+	opacity: 0.4;
+}
+
+/*---------------*/
+/***** Marley *****/
+/*---------------*/
+
+figure.zmj_marley figcaption {
+	text-align: right;
+}
+
+figure.zmj_marley h2,
+figure.zmj_marley p {
+	position: absolute;
+	right: 30px;
+	left: 30px;
+	padding: 10px 0;
+}
+
+
+figure.zmj_marley p {
+	bottom: 30px;
+	line-height: 1.5;
+	transform: translate3d(0,100%,0);
+}
+
+figure.zmj_marley h2 {
+	top: 30px;
+	transition: transform 0.35s;
+	transform: translate3d(0,20px,0);
+}
+
+figure.zmj_marley:hover h2 {
+	transform: translate3d(0,0,0);
+}
+
+figure.zmj_marley h2::after {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: 4px;
+	background: #fff;
+	content: '';
+	transform: translate3d(0,40px,0);
+}
+
+figure.zmj_marley h2::after,
+figure.zmj_marley p {
+	opacity: 0;
+	transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.zmj_marley:hover h2::after,
+figure.zmj_marley:hover p {
+	opacity: 1;
+	transform: translate3d(0,0,0);
+}
+
+/*---------------*/
+/***** Ruby *****/
+/*---------------*/
+
+figure.zmj_ruby {
+	background-color: #17819c;
+}
+
+figure.zmj_ruby img {
+	opacity: 0.7;
+	transition: opacity 0.35s, transform 0.35s;
+	transform: scale(1.15);
+}
+
+figure.zmj_ruby:hover img {
+	opacity: 0.5;
+	transform: scale(1);
+}
+
+figure.zmj_ruby h2 {
+	margin-top: 20%;
+	transition: transform 0.35s;
+	transform: translate3d(0,20px,0);
+}
+
+figure.zmj_ruby p {
+	margin: 1em 0 0;
+	padding: 3em;
+	border: 1px solid #fff;
+	opacity: 0;
+	transition: opacity 0.35s, transform 0.35s;
+	transform: translate3d(0,20px,0) scale(1.1);
+} 
+
+figure.zmj_ruby:hover h2 {
+	transform: translate3d(0,0,0);
+}
+
+figure.zmj_ruby:hover p {
+	opacity: 1;
+	transform: translate3d(0,0,0) scale(1);
+}
+
+/*---------------*/
+/***** Milo *****/
+/*---------------*/
+
+figure.zmj_milo {
+	background: #2e5d5a;
+}
+
+figure.zmj_milo img {
+	width: -webkit-calc(100% + 60px);
+	width: calc(100% + 60px);
+	opacity: 1;
+	transition: opacity 0.35s, transform 0.35s;
+	transform: translate3d(-30px,0,0) scale(1.12);
+	backface-visibility: hidden;
+}
+
+figure.zmj_milo:hover img {
+	opacity: 0.5;
+	transform: translate3d(0,0,0) scale(1);
+}
+
+figure.zmj_milo h2 {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	padding: 1em 1.2em;
+}
+
+figure.zmj_milo p {
+	padding: 0 10px 0 0;
+	width: 50%;
+	border-right: 1px solid #fff;
+	text-align: right;
+	opacity: 0;
+	transition: opacity 0.35s, transform 0.35s;
+	transform: translate3d(-40px,0,0);
+}
+
+figure.zmj_milo:hover p {
+	opacity: 1;
+	transform: translate3d(0,0,0);
+}
+

@@ -1,0 +1,221 @@
+@charset "utf-8";
+/* CSS Document */
+
+/****************************************图标文字*****************************************************/
+
+p, a, li {
+	font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+	text-decoration:none;
+	color: #555;
+	line-height: 1.6;
+	list-style-type: none;
+}
+
+.row:before,
+.row:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.row:after {
+  clear: both;
+}
+
+.span3 {
+  width: 270px;
+}
+
+
+.font {
+	font-family: 'Open Sans', sans-serif;
+	font-weight:400; 
+	font-weight:600; 
+	font-weight:700; 
+	font-weight:800; 
+}
+
+.planning {
+	width:1250px;
+	padding-top:60px;
+	padding-bottom:50px;
+	text-align:center;
+  	margin-right: auto;
+  	margin-left: auto;
+}
+.planning a {
+	display: block;
+	margin-bottom: 15px;
+	padding: 0;
+	color: #3a3a3a;
+	font-family: "微软雅黑";	
+}
+
+.planning a span.img_icon {
+	display:block;
+	width:70px;
+	height:70px;
+	margin:0 auto 14px auto;
+}
+.planning a span.icon1 {
+	background-image: url(../image/icon1.png);
+	background-position:left top;
+	background-repeat:no-repeat;
+}
+.planning a:hover span.icon1 {background-position:left bottom;
+}
+.planning a span.icon2 {
+	background-image:url(../image/icon2.png);
+	background-position:left top;
+	background-repeat:no-repeat;
+}
+.planning a:hover span.icon2 {background-position:left bottom;
+}
+.planning a span.icon3 {
+	background-image:url(../image/icon3.png);
+	background-position:left top;
+	background-repeat:no-repeat;
+}
+.planning a:hover span.icon3 {background-position:left bottom;
+}
+.planning a span.icon4 {
+	background-image:url(../image/icon4.png);
+	background-position:left top;
+	background-repeat:no-repeat;
+}
+.planning a:hover span.icon4 {background-position:left bottom;
+}
+.planning a span.link_title {
+	display:block;
+	line-height:24px;
+	font-size:20px;
+	text-transform:uppercase;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:800;
+	padding-bottom:8px;
+	color:#313131;	
+}
+.planning a:hover {text-decoration:none;color: #F00
+}
+
+.welcome_block {
+	text-align:center;
+	padding:36px 0;
+	line-height:20px;
+	font-size:18px;
+	color:#3b3b3b;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:400;
+	position:relative;
+	text-transform:uppercase;
+}
+.welcome_block span {
+	line-height:31px;
+	padding-top:7px;
+	font-size:30px;
+	display:block;	
+}
+.welcome_line {
+	height:1px;
+	background: url(../image/welcome_bg.png) no-repeat center top;
+	position:absolute;
+	left:0;
+	right:0;
+}
+.welcome_t {top:0;
+}
+.welcome_b {bottom:0;
+}
+
+[class*="span"]{float:left;min-height:1px;margin-left:30px}
+
+.headline {
+	width:200px;
+	height:60px;
+	display:block;
+	margin-top:0px;
+	
+	}
+/******************************************拉近夜景展示柜*****************************************************/
+
+.thumbnails p {font-family:'微软雅黑';}
+
+p, a, li {
+	font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+	text-decoration:none;
+	color: #555;
+	line-height: 1.7;
+	list-style-type: none;
+}
+ p {margin:0; padding:0;}
+
+ h3 {
+	color:#555; 
+	margin-top:5px; 
+	text-shadow:none; 
+	text-shadow:0 0 1px #f6f6f6;
+	font-weight:normal; 
+	font-family:'Open Sans', sans-serif; 
+	font-size:30px;
+} 
+
+.thumbnails img{page-break-inside:avoid;max-width:100%}
+
+.thumbnail-style { 
+	padding:5px; 
+	border-radius:2px; 
+}
+.thumbnail-style:hover { 
+	box-shadow:0 0 18px  #333333; 
+    transition:box-shadow 0.2s ease-in-out;
+}
+.thumbnail-style h3 {
+	margin:5px 0 0 0;
+}
+.thumbnail-style h3 a {
+	font-size:20px;
+}
+.thumbnail-style h3 a:hover {
+	color:#72c02c;
+	text-decoration:none;
+}
+.thumbnail-style .thumbnail-img {
+	position:relative;
+}
+.thumbnail-style a.btn-more {
+	right:-10px;
+	bottom:10px;
+	color:#fff;
+	padding:1px 6px;
+	position:absolute;
+	background:#72c02c;
+	display:inline-block; 
+}
+.thumbnail-style a.btn-more:hover {
+	text-decoration:none;
+	box-shadow:0 0 0 3px #377500;
+}
+.thumbnail-style:hover a.btn-more {
+	right:10px;
+}
+.thumbnail-kenburn img {
+	left:10px;
+	margin-left:-10px;
+	position:relative;
+   transition: all 0.8s ease-in-out;
+}
+.thumbnail-kenburn:hover img {
+   transform: scale(1.15) rotate(2deg);
+}
+.overflow-hidden { overflow:hidden;}
+
+.hover-effect {
+	transition:all 0.4s ease-in-out;
+}
+
+.zmj_xian {
+	float:left;
+	margin-top: 80px;	
+	}
+
+

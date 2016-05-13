@@ -1,0 +1,75 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	font-family: 'Century Gothic', sans-serif;
+	padding: 0px;
+	margin: 0px 0px 0px 0px;	
+}
+.navigation {
+	width: 103%;
+	background: #f9f9f9;
+	height: 94px;
+	border-bottom: 1px solid #f15556;
+	position: fixed;
+	top: 0;
+	z-index: 5000;
+	padding: 0px;
+	margin: 0px 0px 0px 0px;
+	
+}
+.navigation ul {
+	padding:0; 
+    margin:0;
+    list-style-type: none;
+	}
+.navigation ul li {
+	float:left; 
+    position:relative;
+	}
+.navigation ul div{
+	width: 80px;
+	height: 85px;
+	float: left;
+	margin-right: 475px;
+	margin-left: 50px;
+	background: url(../image/photography.png) no-repeat center;
+	}
+.navigation ul div a {
+	width: 70px;
+	height: 60px;
+	font-size: 48px;
+	margin-left: 65px;
+	margin-top: 18px;
+	display: block;
+	text-decoration: none;
+	color: #333;
+	font-weight: bold;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-style: italic;
+	}
+.navigation ul li a{
+	width: 150px;
+	height: 25px;
+	padding-top: 35px;
+	padding-bottom: 35px;
+	color: #000;
+	background: repeat-x  url(../image/banner_bg.jpg) 0 -94px;
+	transition-duration: 0.6s;
+	font-family: 'Century Gothic', sans-serif;
+	font-size: 20px;
+	font-style: normal;
+	line-height: 23px;
+	font-weight: normal;
+	font-variant: normal;
+	text-decoration: none;
+	display: block;
+	text-align: center;
+}
+.navigation ul li a:hover 
+{
+	background-color: #f15556;
+    background-position: 0 0px ;
+    color: #ffffff;
+}
+

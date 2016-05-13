@@ -1,0 +1,67 @@
+@charset "utf-8";
+#form {
+	height: 900px;
+	width: 500px;
+	margin-left:80px;
+	margin-right:0px;
+	margin-top:40px;
+	overflow: visible;
+	
+}
+#name_zmj {
+	height: 25px;
+	width: 500px;
+	margin-top:30px;
+	margin-bottom: 20px;
+}
+#name_zmj_bd {
+	height: 25px;
+	width: 500px;
+	margin-top:15px;
+	margin-bottom: 30px;
+	border-radius:3px;
+	-moz-box-shadow: inset 2px 1px 2px #888888; 
+	box-shadow: inset 2px 1px 2px #888888;
+}
+
+#email_zmj {
+	height: 35px;
+	width: 500px;
+	margin-top:15px;
+	margin-bottom: 0px
+}
+#email_zmj_bd {
+	height: 30px;
+	width: 500px;
+	margin-top:20px;
+	margin-bottom: 30px;
+	border-radius:3px;
+	-moz-box-shadow: inset 2px 1px 2px #888888;
+	box-shadow: inset 2px 1px 2px #888888;
+}
+#message_zmj {
+	height: 35px;
+	width: 500px;
+	margin-top:0px;
+	margin-bottom: 5px
+	}
+#message_zmj_bd {
+	border-radius:3px;
+	height: 270px;
+	width: 700px;
+	margin-top:20px;
+	margin-bottom: 0px
+	-moz-box-shadow: inset 2px 1px 2px #888888;
+	box-shadow: inset 2px 1px 2px #888888;
+	}
+#send {
+	width:100px;
+	height:35px;
+	font-size:16px;
+	color:#CCC;
+	margin-top:30px;
+	border-radius:4px;
+	background-image: -moz-linear-gradient(top,#D3D3D3,#696969);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #D3D3D3), color-stop(1,#696969))
+	
+	}
